@@ -1,0 +1,84 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - {% block title %}{% endblock title %}</title>
+    <link href="{% static 'css/pace.min.css' %}" rel="stylesheet" />
+    <script src="{% static 'js/pace.min.js' %}"></script>
+    <!--favicon-->
+    <link
+      rel="icon"
+      href="{% static 'images/favicon.ico' %}"
+      type="image/x-icon"
+    />
+    <!-- Vector CSS -->
+    <link
+      href="{% static 'plugins/vectormap/jquery-jvectormap-2.0.2.css' %}"
+      rel="stylesheet"
+    />
+    <!-- simplebar CSS-->
+    <link
+      href="{% static 'plugins/simplebar/css/simplebar.css' %}"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap core CSS-->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+    <!-- animate CSS-->
+    <link
+      href="{% static 'css/animate.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Icons CSS-->
+    <link
+      href="{% static 'css/icons.css' %}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- Sidebar CSS-->
+    <link href="{% static 'css/sidebar-menu.css' %}" rel="stylesheet" />
+    <!-- Custom Style-->
+    <link href="{% static 'css/app-style.css' %}" rel="stylesheet" />
+  </head>
+  <body class="bg-theme bg-theme1">
+    <div id="wrapper">
+        {% include 'includes/navigation.html' %}
+        {% include 'includes/sidebar.html' %}
+    <div class="clearfix"></div>
+    <div class="content-wrapper">
+    <div class="container-fluid">
+        {% include 'includes/cards.html' %}
+        {% include 'includes/charts.html' %}
+        {% include 'includes/table.html' %}
+        <div class="overlay toggle-menu"></div>
+    </div>
+    </div>
+        <a href="javaScript:void();" style="display: block;" class="back-to-top"><i class="fa fa-angle-double-up"></i></a>
+        {% include 'includes/footer.html' %}
+        {% include 'includes/color-switcher.html' %}
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <!-- simplebar js -->
+    <script src="{% static 'plugins/simplebar/js/simplebar.js' %}"></script>
+    <!-- sidebar-menu js -->
+    <script src="{% static 'js/sidebar-menu.js' %}"></script>
+    <!-- loader scripts -->
+    <script src="{% static 'js/jquery.loading-indicator.js' %}"></script>
+    <!-- Custom scripts -->
+    <script src="{% static 'js/app-script.js' %}"></script>
+    <!-- Chart js -->
+
+    <script src="{% static 'plugins/Chart.js/Chart.min.js' %}"></script>
+
+    <!-- Index js -->
+    <script src="{% static 'js/index.js' %}"></script>
+  </body>
+</html>
