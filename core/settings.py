@@ -120,7 +120,7 @@ USE_I18N = True
 USE_TZ = True
 
 
-STATIC_ROOT = 'staticfiles'
+STATIC_ROOT = os.path.join(CORE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
