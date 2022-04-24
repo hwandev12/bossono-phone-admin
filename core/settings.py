@@ -23,6 +23,7 @@ CORE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'h$q52zfg@98a@oo80)c%gae_)hjth_@!-lj#k=v)n!lc2diyan'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
 
 ALLOWED_HOSTS = ['dashboard-admin-template.herokuapp.com', '127.0.0.1']
 
