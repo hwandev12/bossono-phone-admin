@@ -20,3 +20,17 @@ class CardPopulate(models.Model):
 
     def __str__(self):
         return str(self.text)
+
+# Chart js model here
+
+
+class Chart(models.Model):
+
+    class Meta:
+        verbose_name = 'Charts'
+        verbose_name_plural = 'Charts'
+
+    chart = models.CharField(max_length=60)
+
+    def __str__(self):
+        return self.chart
