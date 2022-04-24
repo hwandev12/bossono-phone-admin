@@ -4,7 +4,7 @@
 	$(function() {
 
 		if ($('#lineChart').length) {
-			
+
 			var ctx = document.getElementById('lineChart').getContext('2d');
 			var myChart = new Chart(ctx, {
 				type: 'line',
@@ -30,13 +30,13 @@
 				legend: {
 				  display: true,
 				  labels: {
-					fontColor: '#ddd',  
+					fontColor: '#ddd',
 					boxWidth:40
 				  }
 				},
 				tooltips: {
 				  enabled:false
-				},	
+				},
 			  scales: {
 				  xAxes: [{
 					ticks: {
@@ -62,7 +62,7 @@
 
 			 }
 			});
-			
+
 		}
 
 
@@ -86,13 +86,13 @@
 				legend: {
 				  display: true,
 				  labels: {
-					fontColor: '#ddd',  
+					fontColor: '#ddd',
 					boxWidth:40
 				  }
 				},
 				tooltips: {
 				  enabled:false
-				},	
+				},
 			  scales: {
 				  xAxes: [{
 					  barPercentage: .5,
@@ -140,17 +140,17 @@
 				},
 			options: {
 			   legend: {
-				 position :"right",	
+				 position :"right",
 				 display: true,
 				    labels: {
-					  fontColor: '#ddd',  
+					  fontColor: '#ddd',
 					  boxWidth:15
 				   }
 				},
 			scale: {
 				  gridLines: {
-					   color: "rgba(221, 221, 221, 0.12)" 
-					 }, 
+					   color: "rgba(221, 221, 221, 0.12)"
+					 },
 				}
 			   }
 			});
@@ -176,10 +176,10 @@
 				},
 			options: {
 			   legend: {
-				 position :"right",	
+				 position :"right",
 				 display: true,
 				    labels: {
-					  fontColor: '#ddd',  
+					  fontColor: '#ddd',
 					  boxWidth:15
 				   }
 				}
@@ -207,10 +207,10 @@
 				},
 			options: {
 			   legend: {
-				 position :"right",	
+				 position :"right",
 				 display: true,
 				    labels: {
-					  fontColor: '#ddd',  
+					  fontColor: '#ddd',
 					  boxWidth:15
 				   }
 				}
